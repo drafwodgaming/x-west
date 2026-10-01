@@ -1,6 +1,6 @@
-# x-ui-pro-refactor
+# x-west
 
-Refactored single-file installer for 3x-ui VPN panel (based on x-ui-pro).
+Refactored single-file installer for 3x-ui VPN panel (based on 3x-ui).
 
 ## Repository structure
 
@@ -21,7 +21,7 @@ assets/
 ```
 
 Scripts download assets at install time from this repo's raw GitHub URL
-(`https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/...`) — changes take
+(`https://raw.githubusercontent.com/drafwodgaming/x-west/main/...`) — changes take
 effect on servers only after push to `main`.
 
 ## What x-ui-latest.sh does
@@ -82,13 +82,13 @@ IP = `api/st/getip`. Speedtest locations use `limit_conn`, not `limit_req`
 ## Running
 
 ```bash
-sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -subdomain panel.example.com -reality_domain r.example.com
+sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -subdomain panel.example.com -reality_domain r.example.com
 ```
 
 Patch an existing install (re-reads ports/paths from x-ui.db and nginx):
 
 ```bash
-sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
+sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
 ```
 
 Add AdGuard Home on the panel domain (standalone, re-run safe, `-uninstall y`
@@ -98,5 +98,5 @@ to remove). AGH binds localhost only; nginx bridges `/dns-query` (DoH,
 regenerate the vhost and drop that include — re-run this script after them:
 
 ```bash
-sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
+sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
 ```

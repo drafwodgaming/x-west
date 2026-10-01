@@ -1,4 +1,4 @@
-# 3x-ui-pro
+# x-west
 
 🇷🇺 [Русская версия](README.md)
 
@@ -33,7 +33,7 @@ Automated installer for the [3x-ui](https://github.com/MHSanaei/3x-ui) panel wit
 **Install the 3x-ui panel**
 
 ```bash
-sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -install y
+sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -install y
 ```
 
 ---
@@ -42,7 +42,7 @@ sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-
 Apply current fixes to an existing installation (no DB changes):
 
 ```bash
-sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
+sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
 ```
 
 ---
@@ -55,7 +55,7 @@ Installs [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) on the panel
 - **Admin UI** — at a random `/adg-<random>/` path (login and password are printed by the script)
 
 ```bash
-sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
+sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
 ```
 
 Re-running is safe (settings and password are kept). After the installer or the patch, run this script again — they rewrite the nginx config.
@@ -63,7 +63,7 @@ Re-running is safe (settings and password are kept). After the installer or the 
 Uninstall:
 
 ```bash
-sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh -uninstall y
+sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh -uninstall y
 ```
 
 ---
@@ -73,7 +73,7 @@ sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x
 **Remove the 3x-ui panel**
 
 ```bash
-sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -uninstall y
+sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -uninstall y
 ```
 
 ---
@@ -106,7 +106,7 @@ The import link is printed by the script after installation.
 **Install the backup script**
 
 ```bash
-sudo wget -qO x-ui-backup.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/assets/backup/x-ui-backup.sh && sudo install -m 0755 x-ui-backup.sh /usr/local/bin/x-ui-backup
+sudo wget -qO x-ui-backup.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/assets/backup/x-ui-backup.sh && sudo install -m 0755 x-ui-backup.sh /usr/local/bin/x-ui-backup
 ```
 
 **Create a backup**

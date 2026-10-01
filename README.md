@@ -1,4 +1,4 @@
-# 3x-ui-pro
+# x-west
 
 🇬🇧 [English version](README_EN.md)
 
@@ -33,7 +33,7 @@
 **Установить панель 3x-ui**
 
 ```bash
-sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-latest.sh && sudo bash x-ui-latest.sh
+sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-latest.sh && sudo bash x-ui-latest.sh
 ```
 
 ---
@@ -42,7 +42,7 @@ sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-
 Применить текущие фиксы к существующей установке (без изменений БД):
 
 ```bash
-sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
+sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-patch.sh && sudo bash x-ui-patch.sh
 ```
 
 ---
@@ -55,7 +55,7 @@ sudo wget -qO x-ui-patch.sh https://raw.githubusercontent.com/drafwodgaming/3x-u
 - **Админка** — на случайном пути `/adg-<random>/` (логин и пароль выводит скрипт)
 
 ```bash
-sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
+sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh
 ```
 
 Повторный запуск безопасен (настройки и пароль сохраняются). После установщика или патча запустите скрипт ещё раз — они перезаписывают конфиг nginx.
@@ -63,7 +63,7 @@ sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x
 Удаление:
 
 ```bash
-sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh -uninstall y
+sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-adguard.sh && sudo bash x-ui-adguard.sh -uninstall y
 ```
 
 ---
@@ -73,7 +73,7 @@ sudo wget -qO x-ui-adguard.sh https://raw.githubusercontent.com/drafwodgaming/3x
 **Удалить панель 3x-ui**
 
 ```bash
-sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -uninstall y
+sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/x-ui-latest.sh && sudo bash x-ui-latest.sh -uninstall y
 ```
 
 ---
@@ -107,7 +107,7 @@ sudo wget -qO x-ui-latest.sh https://raw.githubusercontent.com/drafwodgaming/3x-
 **Установить скрипт бэкапа**
 
 ```bash
-sudo wget -qO x-ui-backup.sh https://raw.githubusercontent.com/drafwodgaming/3x-ui-pro/main/assets/backup/x-ui-backup.sh && sudo install -m 0755 x-ui-backup.sh /usr/local/bin/x-ui-backup
+sudo wget -qO x-ui-backup.sh https://raw.githubusercontent.com/drafwodgaming/x-west/main/assets/backup/x-ui-backup.sh && sudo install -m 0755 x-ui-backup.sh /usr/local/bin/x-ui-backup
 ```
 
 **Создать бэкап**
